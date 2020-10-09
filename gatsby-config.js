@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -23,19 +26,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts/`,
-        ignore: [`**/\.*`],
-      },
-    },
-    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `2buq21floyex`,
-        accessToken: `LrXfbkc3aOCSDQIoj5elERadZVhR3CoNGChfLoHPFIc`,
-        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: "LrXfbkc3aOCSDQIoj5elERadZVhR3CoNGChfLoHPFIc",
         // accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
