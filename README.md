@@ -22,8 +22,6 @@ package.json
 
 pages, components, images
 
-<font color="#dd00dd">*later: shared, templates*</font>
-
 #### Workflow
 
 git: pull, create a new branch, checkout your br
@@ -35,10 +33,6 @@ vscode: write your code
 prettier: npm run format
 
 git: commit, pull, push (solve conflict) 
-
-<font color="#dd00dd">*show contentful*</font>
-
- <font color="#dd00dd">***mention slug***</font>
 
 #### Write styled components and layout.js
 
