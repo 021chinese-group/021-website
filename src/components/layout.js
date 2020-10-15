@@ -6,17 +6,15 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
-    color: ${props => (props.theme === "purple" ? "purple" : "white")};
-    margin: 0 25px;
+    // color: ${props => (props.theme === "purple" ? "purple" : "white")};
   }
 `
 
 export default function Layout({ children }) {
   return (
     <>
-      <GlobalStyle theme="purple" />
+      <GlobalStyle theme="purple"></GlobalStyle>
       <Navbar />
-      <Header />
       <main>{children}</main>
       <Footer />
     </>
